@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JKRichLabel_Example' do
+  pod 'JKRichLabel', :path => '../'
+
+  target 'JKRichLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
