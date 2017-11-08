@@ -1,0 +1,6 @@
+framework module JKRichLabel {
+  umbrella header "JKRichLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

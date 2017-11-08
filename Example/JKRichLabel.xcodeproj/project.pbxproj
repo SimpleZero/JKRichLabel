@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410A54D1FB28CC1006A6C19 /* JKLineBreakModeExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A54C1FB28CC1006A6C19 /* JKLineBreakModeExample.m */; };
+		0410A5501FB2AFA7006A6C19 /* JKLinkExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A54F1FB2AFA7006A6C19 /* JKLinkExample.m */; };
+		0410A5531FB2B7A1006A6C19 /* JKHitExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A5521FB2B7A1006A6C19 /* JKHitExample.m */; };
+		0410A5561FB2C13D006A6C19 /* JKHighlightExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A5551FB2C13D006A6C19 /* JKHighlightExample.m */; };
+		0410A5591FB2C883006A6C19 /* JKWPSExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A5581FB2C883006A6C19 /* JKWPSExample.m */; };
+		0410A55C1FB2CEE2006A6C19 /* JKPathExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A55B1FB2CEE2006A6C19 /* JKPathExample.m */; };
+		0410A55F1FB2D015006A6C19 /* JKLongTextExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410A55E1FB2D015006A6C19 /* JKLongTextExample.m */; };
+		041E62B11FB1D1E100236B97 /* JKRichLabelExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E62B01FB1D1E100236B97 /* JKRichLabelExample.m */; };
+		041E62B41FB1D63000236B97 /* JKAlignmentExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E62B31FB1D63000236B97 /* JKAlignmentExample.m */; };
+		041E62B71FB1E09E00236B97 /* JKOtherExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E62B61FB1E09E00236B97 /* JKOtherExample.m */; };
+		041E62BA1FB20CBD00236B97 /* JKSizeToFitExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E62B91FB20CBD00236B97 /* JKSizeToFitExample.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,8 +48,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3C95043FADE08AAC35A644FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		42AC9A46C79C067C99854F0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0410A54B1FB28CC1006A6C19 /* JKLineBreakModeExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLineBreakModeExample.h; sourceTree = "<group>"; };
+		0410A54C1FB28CC1006A6C19 /* JKLineBreakModeExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLineBreakModeExample.m; sourceTree = "<group>"; };
+		0410A54E1FB2AFA7006A6C19 /* JKLinkExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLinkExample.h; sourceTree = "<group>"; };
+		0410A54F1FB2AFA7006A6C19 /* JKLinkExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLinkExample.m; sourceTree = "<group>"; };
+		0410A5511FB2B7A1006A6C19 /* JKHitExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKHitExample.h; sourceTree = "<group>"; };
+		0410A5521FB2B7A1006A6C19 /* JKHitExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKHitExample.m; sourceTree = "<group>"; };
+		0410A5541FB2C13D006A6C19 /* JKHighlightExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKHighlightExample.h; sourceTree = "<group>"; };
+		0410A5551FB2C13D006A6C19 /* JKHighlightExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKHighlightExample.m; sourceTree = "<group>"; };
+		0410A5571FB2C883006A6C19 /* JKWPSExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKWPSExample.h; sourceTree = "<group>"; };
+		0410A5581FB2C883006A6C19 /* JKWPSExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKWPSExample.m; sourceTree = "<group>"; };
+		0410A55A1FB2CEE2006A6C19 /* JKPathExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPathExample.h; sourceTree = "<group>"; };
+		0410A55B1FB2CEE2006A6C19 /* JKPathExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKPathExample.m; sourceTree = "<group>"; };
+		0410A55D1FB2D015006A6C19 /* JKLongTextExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKLongTextExample.h; sourceTree = "<group>"; };
+		0410A55E1FB2D015006A6C19 /* JKLongTextExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKLongTextExample.m; sourceTree = "<group>"; };
+		041E62AF1FB1D1E100236B97 /* JKRichLabelExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKRichLabelExample.h; sourceTree = "<group>"; };
+		041E62B01FB1D1E100236B97 /* JKRichLabelExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKRichLabelExample.m; sourceTree = "<group>"; };
+		041E62B21FB1D63000236B97 /* JKAlignmentExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKAlignmentExample.h; sourceTree = "<group>"; };
+		041E62B31FB1D63000236B97 /* JKAlignmentExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAlignmentExample.m; sourceTree = "<group>"; };
+		041E62B51FB1E09E00236B97 /* JKOtherExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKOtherExample.h; sourceTree = "<group>"; };
+		041E62B61FB1E09E00236B97 /* JKOtherExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKOtherExample.m; sourceTree = "<group>"; };
+		041E62B81FB20CBD00236B97 /* JKSizeToFitExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKSizeToFitExample.h; sourceTree = "<group>"; };
+		041E62B91FB20CBD00236B97 /* JKSizeToFitExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKSizeToFitExample.m; sourceTree = "<group>"; };
+		3C95043FADE08AAC35A644FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		42AC9A46C79C067C99854F0C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5118D5B0C33839622B3E0625 /* Pods-JKRichLabel_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKRichLabel_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKRichLabel_Tests/Pods-JKRichLabel_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JKRichLabel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKRichLabel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,7 +96,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799A89E4D6AB6E625BEB0BBA /* Pods_JKRichLabel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKRichLabel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B9C674F2EFCA19E8EA19DBD3 /* JKRichLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JKRichLabel.podspec; path = ../JKRichLabel.podspec; sourceTree = "<group>"; };
+		B9C674F2EFCA19E8EA19DBD3 /* JKRichLabel.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKRichLabel.podspec; path = ../JKRichLabel.podspec; sourceTree = "<group>"; };
 		CAD3EEE3CC8FE5BE30E8F466 /* Pods-JKRichLabel_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKRichLabel_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKRichLabel_Example/Pods-JKRichLabel_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D26ABCDF5BABAB41442F9054 /* Pods_JKRichLabel_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKRichLabel_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC08AB283C4300E3BA205142 /* Pods-JKRichLabel_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKRichLabel_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKRichLabel_Example/Pods-JKRichLabel_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +170,28 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* JKViewController.h */,
 				6003F5A6195388D20070C39A /* JKViewController.m */,
+				041E62AF1FB1D1E100236B97 /* JKRichLabelExample.h */,
+				041E62B01FB1D1E100236B97 /* JKRichLabelExample.m */,
+				041E62B21FB1D63000236B97 /* JKAlignmentExample.h */,
+				041E62B31FB1D63000236B97 /* JKAlignmentExample.m */,
+				0410A54B1FB28CC1006A6C19 /* JKLineBreakModeExample.h */,
+				0410A54C1FB28CC1006A6C19 /* JKLineBreakModeExample.m */,
+				041E62B81FB20CBD00236B97 /* JKSizeToFitExample.h */,
+				041E62B91FB20CBD00236B97 /* JKSizeToFitExample.m */,
+				0410A55A1FB2CEE2006A6C19 /* JKPathExample.h */,
+				0410A55B1FB2CEE2006A6C19 /* JKPathExample.m */,
+				0410A55D1FB2D015006A6C19 /* JKLongTextExample.h */,
+				0410A55E1FB2D015006A6C19 /* JKLongTextExample.m */,
+				0410A5511FB2B7A1006A6C19 /* JKHitExample.h */,
+				0410A5521FB2B7A1006A6C19 /* JKHitExample.m */,
+				0410A54E1FB2AFA7006A6C19 /* JKLinkExample.h */,
+				0410A54F1FB2AFA7006A6C19 /* JKLinkExample.m */,
+				0410A5541FB2C13D006A6C19 /* JKHighlightExample.h */,
+				0410A5551FB2C13D006A6C19 /* JKHighlightExample.m */,
+				0410A5571FB2C883006A6C19 /* JKWPSExample.h */,
+				0410A5581FB2C883006A6C19 /* JKWPSExample.m */,
+				041E62B51FB1E09E00236B97 /* JKOtherExample.h */,
+				041E62B61FB1E09E00236B97 /* JKOtherExample.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -394,8 +449,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0410A55F1FB2D015006A6C19 /* JKLongTextExample.m in Sources */,
 				6003F59E195388D20070C39A /* JKAppDelegate.m in Sources */,
+				0410A5561FB2C13D006A6C19 /* JKHighlightExample.m in Sources */,
+				041E62B71FB1E09E00236B97 /* JKOtherExample.m in Sources */,
 				6003F5A7195388D20070C39A /* JKViewController.m in Sources */,
+				0410A5591FB2C883006A6C19 /* JKWPSExample.m in Sources */,
+				041E62B11FB1D1E100236B97 /* JKRichLabelExample.m in Sources */,
+				041E62BA1FB20CBD00236B97 /* JKSizeToFitExample.m in Sources */,
+				0410A5531FB2B7A1006A6C19 /* JKHitExample.m in Sources */,
+				041E62B41FB1D63000236B97 /* JKAlignmentExample.m in Sources */,
+				0410A55C1FB2CEE2006A6C19 /* JKPathExample.m in Sources */,
+				0410A54D1FB28CC1006A6C19 /* JKLineBreakModeExample.m in Sources */,
+				0410A5501FB2AFA7006A6C19 /* JKLinkExample.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,6 +593,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JKRichLabel/JKRichLabel-Prefix.pch";
 				INFOPLIST_FILE = "JKRichLabel/JKRichLabel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -542,6 +609,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JKRichLabel/JKRichLabel-Prefix.pch";
 				INFOPLIST_FILE = "JKRichLabel/JKRichLabel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

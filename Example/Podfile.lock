@@ -1,0 +1,16 @@
+PODS:
+  - JKRichLabel (0.1.0)
+
+DEPENDENCIES:
+  - JKRichLabel (from `../`)
+
+EXTERNAL SOURCES:
+  JKRichLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JKRichLabel: 2ecba78343a7e41e54450c2df0528bd8eb43a52a
+
+PODFILE CHECKSUM: 7f176b26160f235950e7c3359663c50adba16331
+
+COCOAPODS: 1.3.0.beta.1

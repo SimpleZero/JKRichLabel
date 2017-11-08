@@ -1,0 +1,6 @@
+framework module Pods_JKRichLabel_Tests {
+  umbrella header "Pods-JKRichLabel_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

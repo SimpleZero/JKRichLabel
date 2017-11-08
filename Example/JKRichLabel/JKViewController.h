@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface JKViewController : UIViewController
+@interface JKViewController : UINavigationController
 
 @end

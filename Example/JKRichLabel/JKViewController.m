@@ -7,23 +7,18 @@
 //
 
 #import "JKViewController.h"
+#import "JKRichLabelExample.h"
 
 @interface JKViewController ()
-
 @end
 
 @implementation JKViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    JKRichLabelExample *example = [JKRichLabelExample new];
+    [self pushViewController:example animated:NO];
 }
 
 @end
