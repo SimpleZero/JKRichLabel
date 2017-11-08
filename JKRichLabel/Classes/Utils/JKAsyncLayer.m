@@ -34,22 +34,12 @@ static dispatch_queue_t JKAsyncLayerDisplayQueue() {
             dispatch_queue_attr_t attr = dispatch_queue_attr_make_with_qos_class(DISPATCH_QUEUE_SERIAL, QOS_CLASS_USER_INITIATED, 0);
             queues[i] = dispatch_queue_create("com.simplezero.github.render", attr);
         }
-        
-//        for (NSInteger i = 0; i < queueCount; i++) {
-//            queues[i] = dispatch_queue_create("com.simplezero.github.render", DISPATCH_QUEUE_SERIAL);
-//            dispatch_set_target_queue(queues[i], dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
-//        }
-        
     });
     
     int32_t c = OSAtomicIncrement32(&counter);
     if (c < 0) c = -c;
     return queues[c % queueCount];
 #undef MAX_QUEUE_COUNT
-}
-
-static dispatch_queue_t JKAsyncLayerRelaseQueue() {
-    return dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
 }
 
 @implementation JKAsyncLayer {

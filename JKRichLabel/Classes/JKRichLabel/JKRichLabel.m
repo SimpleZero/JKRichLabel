@@ -9,18 +9,6 @@
 #import "JKRichLabel.h"
 #import "JKRichLabelContainer.h"
 #import "JKRichLabelLayout.h"
-#import <objc/runtime.h>
-
-@interface JKRichLabelScrollView : UIScrollView
-
-@end
-
-
-@implementation JKRichLabelScrollView
-+ (Class)layerClass {
-    return [JKAsyncLayer class];
-}
-@end
 
 
 @interface JKRichLabel() <JKAsyncLayerDelegate> {
