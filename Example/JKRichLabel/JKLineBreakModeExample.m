@@ -52,7 +52,7 @@
         }
         one.frame = frame;
         one.backgroundColor = [UIColor grayColor];
-        one.text = [NSString stringWithFormat:@"%@\nThis is a functional test text. This is a functional test text. This is a functional test text.", modes[i]];
+        one.text = [NSString stringWithFormat:@"%@\nThis is a functional test text. This is a functional test text. This is a functional test text.This is a functional test text. This is a functional test text. ", modes[i]];
         one.lineBreakMode = i;
         one.numberOfLines = 0;
         [self.view addSubview:one];
