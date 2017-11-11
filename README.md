@@ -17,57 +17,57 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```
 NSArray<NSString *> *texts = @[
-@"左上",
-@"左中",
-@"左下",
-@"中上",
-@"中中",
-@"中下",
-@"右上",
-@"右中",
-@"右下"
+ @"左上",
+ @"左中",
+ @"左下",
+ @"中上",
+ @"中中",
+ @"中下",
+ @"右上",
+ @"右中",
+ @"右下"
 ];
 
 NSArray<NSNumber *> *hAlignments = @[
-@(NSTextAlignmentLeft),
-@(NSTextAlignmentLeft),
-@(NSTextAlignmentLeft),
-@(NSTextAlignmentCenter),
-@(NSTextAlignmentCenter),
-@(NSTextAlignmentCenter),
-@(NSTextAlignmentRight),
-@(NSTextAlignmentRight),
-@(NSTextAlignmentRight)
+ @(NSTextAlignmentLeft),
+ @(NSTextAlignmentLeft),
+ @(NSTextAlignmentLeft),
+ @(NSTextAlignmentCenter),
+ @(NSTextAlignmentCenter),
+ @(NSTextAlignmentCenter),
+ @(NSTextAlignmentRight),
+ @(NSTextAlignmentRight),
+ @(NSTextAlignmentRight)
 ];
 
 NSArray<NSNumber *> *vAlignments = @[
-@(JKTextVerticalAlignmentTop),
-@(JKTextVerticalAlignmentCenter),
-@(JKTextVerticalAlignmentBottom),
-@(JKTextVerticalAlignmentTop),
-@(JKTextVerticalAlignmentCenter),
-@(JKTextVerticalAlignmentBottom),
-@(JKTextVerticalAlignmentTop),
-@(JKTextVerticalAlignmentCenter),
-@(JKTextVerticalAlignmentBottom)
+ @(JKTextVerticalAlignmentTop),
+ @(JKTextVerticalAlignmentCenter),
+ @(JKTextVerticalAlignmentBottom),
+ @(JKTextVerticalAlignmentTop),
+ @(JKTextVerticalAlignmentCenter),
+ @(JKTextVerticalAlignmentBottom),
+ @(JKTextVerticalAlignmentTop),
+ @(JKTextVerticalAlignmentCenter),
+ @(JKTextVerticalAlignmentBottom)
 ];
 
 CGRect frame = CGRectZero;
 for (int i = 0; i < texts.count; i++) {
-JKRichLabel *label = [[JKRichLabel alloc] init];
-if (i == 0) {
-frame = CGRectMake(0, 80, width, height);
-} else {
-UIView *v = self.view.subviews.lastObject;
-CGFloat maxY = CGRectGetMaxY(v.frame);
-frame = CGRectMake(0, maxY + 10, width, height);
+ JKRichLabel *label = [[JKRichLabel alloc] init];
+ if (i == 0) {
+  frame = CGRectMake(0, 80, width, height);
+ } else {
+  UIView *v = self.view.subviews.lastObject;
+  CGFloat maxY = CGRectGetMaxY(v.frame);
+  frame = CGRectMake(0, maxY + 10, width, height);
 }
-label.frame = frame;
-label.backgroundColor = [UIColor grayColor];
-label.text = texts[i];
-label.textAlignment = hAlignments[i].integerValue;
-label.textVerticalAlignment = vAlignments[i].integerValue;
-[self.view addSubview:label];
+ label.frame = frame;
+ label.backgroundColor = [UIColor grayColor];
+ label.text = texts[i];
+ label.textAlignment = hAlignments[i].integerValue;
+ label.textVerticalAlignment = vAlignments[i].integerValue;
+ [self.view addSubview:label];
 }
 ```
 
@@ -75,23 +75,23 @@ label.textVerticalAlignment = vAlignments[i].integerValue;
 
 ```
 NSArray<NSString *> *modes = @[
-@"NSLineBreakByWordWrapping",
-@"NSLineBreakByCharWrapping",
-@"NSLineBreakByClipping",
-@"NSLineBreakByTruncatingHead",
-@"NSLineBreakByTruncatingTail",
-@"NSLineBreakByTruncatingMiddle"
+ @"NSLineBreakByWordWrapping",
+ @"NSLineBreakByCharWrapping",
+ @"NSLineBreakByClipping",
+ @"NSLineBreakByTruncatingHead",
+ @"NSLineBreakByTruncatingTail",
+ @"NSLineBreakByTruncatingMiddle"
 ];
 
 CGRect frame = CGRectZero;
 for (int i = 0; i < 6; i++) {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-if (i == 0) {
-frame = CGRectMake(0, 250, width, 50);
-} else {
-UIView *v = self.view.subviews.lastObject;
-CGFloat maxY = CGRectGetMaxY(v.frame);
-frame = CGRectMake(0, maxY + 10, width, 50);
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ if (i == 0) {
+ frame = CGRectMake(0, 250, width, 50);
+ } else {
+  UIView *v = self.view.subviews.lastObject;
+ CGFloat maxY = CGRectGetMaxY(v.frame);
+ frame = CGRectMake(0, maxY + 10, width, 50);
 }
 one.frame = frame;
 one.backgroundColor = [UIColor grayColor];
@@ -99,44 +99,44 @@ one.text = [NSString stringWithFormat:@"%@\nThis is a functional test text. This
 one.lineBreakMode = i;
 one.numberOfLines = 0;
 [self.view addSubview:one];
-}
+
 ```
 
 
 + JKSizeToFitExample
 ```
 - (void)viewDidLoad {
-[super viewDidLoad];
+ [super viewDidLoad];
 
-self.view.backgroundColor = [UIColor whiteColor];
-CGFloat width = CGRectGetWidth(self.view.bounds);
+ self.view.backgroundColor = [UIColor whiteColor];
+ CGFloat width = CGRectGetWidth(self.view.bounds);
 
-JKRichLabel *tip = [[JKRichLabel alloc] init];
-tip.frame = CGRectMake(0, 80, width, 50);
-tip.textColor = [UIColor whiteColor];
-tip.backgroundColor = [UIColor redColor];
-tip.text = @"点击空白处，下方label可自适应大小";
-tip.font = [UIFont systemFontOfSize:16.f];
-[self.view addSubview:tip];
+ JKRichLabel *tip = [[JKRichLabel alloc] init];
+ tip.frame = CGRectMake(0, 80, width, 50);
+ tip.textColor = [UIColor whiteColor];
+ tip.backgroundColor = [UIColor redColor];
+ tip.text = @"点击空白处，下方label可自适应大小";
+ tip.font = [UIFont systemFontOfSize:16.f];
+ [self.view addSubview:tip];
 
 {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-one.frame = CGRectMake(0, 200, width, 50);
-one.numberOfLines = 0;
-one.backgroundColor = [UIColor grayColor];
-one.text = @"To be or not to be, that's a question.";
-[self.view addSubview:one];
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ one.frame = CGRectMake(0, 200, width, 50);
+ one.numberOfLines = 0;
+ one.backgroundColor = [UIColor grayColor];
+ one.text = @"To be or not to be, that's a question.";
+ [self.view addSubview:one];
 }
 
 {
-UIView *lastV = self.view.subviews.lastObject;
-CGFloat maxY = CGRectGetMaxY(lastV.frame);
-JKRichLabel *one = [[JKRichLabel alloc] init];
-one.frame = CGRectMake(0, maxY + 10, width, 50);
-one.numberOfLines = 0;
-one.backgroundColor = [UIColor grayColor];
-one.text = @"To be or not to be, that's a question.\nTo be or not to be, that's a question.\nTo be or not to be, that's a question.\nTo be or not to be, that's a question.\nTo be or not to be, that's a question.\n";
-[self.view addSubview:one];
+ UIView *lastV = self.view.subviews.lastObject;
+ CGFloat maxY = CGRectGetMaxY(lastV.frame);
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ one.frame = CGRectMake(0, maxY + 10, width, 50);
+ one.numberOfLines = 0;
+ one.backgroundColor = [UIColor grayColor];
+ one.text = @"To be or not to be, that's a question.\nTo be or not to be, that's a question.\nTo be or not to be, that's a question.\nTo be or not to be, that's a question.\nTo be or not to be, that's a question.\n";
+ [self.view addSubview:one];
 }
 }
 
@@ -167,7 +167,7 @@ one.text = @"燕子去了，有再来的时候；杨柳枯了，有再青的时�
 NSMutableString *mutableStr = [NSMutableString new];
 NSString *str = @"This is a long text test. ";
 for (int i = 0; i < 199; i++) {
-[mutableStr appendString:str];
+ [mutableStr appendString:str];
 }
 
 
@@ -194,9 +194,9 @@ label.backgroundColor = [UIColor grayColor];
 
 __weak typeof(self) weakSelf = self;
 NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"这是一段可相应单击和长按的文字" singleTap:^(UIView * _Nonnull targetView, NSAttributedString * _Nonnull attributeString, JKTextAttachment * _Nullable attachment) {
-[weakSelf showMessage:@"单击"];
+ [weakSelf showMessage:@"单击"];
 } longPress:^(UIView * _Nonnull targetView, NSAttributedString * _Nonnull attributeString, JKTextAttachment * _Nullable attachment) {
-[weakSelf showMessage:@"长按"];
+ [weakSelf showMessage:@"长按"];
 }];
 
 label.attributedText = str;
@@ -206,28 +206,28 @@ label.attributedText = str;
 + JKLinkExample
 ```
 {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-one.frame = CGRectMake(0, 200, width, 50);
-one.backgroundColor = [UIColor greenColor];
-NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"http://www.jianshu.com/u/02a488e1e71e"];
-[str setDefaultLink];
-one.attributedText = str;
-[self.view addSubview:one];
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ one.frame = CGRectMake(0, 200, width, 50);
+ one.backgroundColor = [UIColor greenColor];
+ NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"http://www.jianshu.com/u/02a488e1e71e"];
+ [str setDefaultLink];
+ one.attributedText = str;
+ [self.view addSubview:one];
 }
 
 {
-UIView *v = self.view.subviews.lastObject;
-CGFloat maxY = CGRectGetMaxY(v.frame);
-JKRichLabel *one = [[JKRichLabel alloc] init];
-one.frame = CGRectMake(0, maxY + 10, width, 50);
-one.backgroundColor = [UIColor grayColor];
-__weak typeof(self) weakSelf = self;
-NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"自定义方法" singleTap:^(UIView * _Nonnull targetView, NSAttributedString * _Nonnull attributeString, JKTextAttachment * _Nullable attachment) {
-[weakSelf showMessage:attributeString.string];
-}];
-[str setDefaultLinkColor];
-one.attributedText = str;
-[self.view addSubview:one];
+ UIView *v = self.view.subviews.lastObject;
+ CGFloat maxY = CGRectGetMaxY(v.frame);
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ one.frame = CGRectMake(0, maxY + 10, width, 50);
+ one.backgroundColor = [UIColor grayColor];
+ __weak typeof(self) weakSelf = self;
+ NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"自定义方法" singleTap:^(UIView * _Nonnull targetView, NSAttributedString * _Nonnull attributeString, JKTextAttachment * _Nullable attachment) {
+  [weakSelf showMessage:attributeString.string];
+ }];
+ [str setDefaultLinkColor];
+ one.attributedText = str;
+ [self.view addSubview:one];
 }
 ```
 
@@ -288,31 +288,31 @@ NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithStri
 CGSize size = CGSizeMake(50, 50);
 
 {
-[str appendString:@"这是一张图片\t"];
+ [str appendString:@"这是一张图片\t"];
 
-UIImage *img = [UIImage imageNamed:@"JK"];
-JKTextAttachment *attachment = [JKTextAttachment attachmentWithContent:img contentSize:size alignToFont:nil];
-[str appendAttachment:attachment];
-[str appendString:@"\n"];
+ UIImage *img = [UIImage imageNamed:@"JK"];
+ JKTextAttachment *attachment = [JKTextAttachment attachmentWithContent:img contentSize:size alignToFont:nil];
+ [str appendAttachment:attachment];
+ [str appendString:@"\n"];
 }
 
 {
-[str appendString:@"这是一个layer\t"];
+ [str appendString:@"这是一个layer\t"];
 
-CALayer *layer = [CALayer layer];
-layer.backgroundColor = [UIColor purpleColor].CGColor;
-JKTextAttachment *attachment = [JKTextAttachment attachmentWithContent:layer contentSize:size alignToFont:nil];
-[str appendAttachment:attachment];
-[str appendString:@"\n"];
+ CALayer *layer = [CALayer layer];
+ layer.backgroundColor = [UIColor purpleColor].CGColor;
+ JKTextAttachment *attachment = [JKTextAttachment attachmentWithContent:layer contentSize:size alignToFont:nil];
+ [str appendAttachment:attachment];
+ [str appendString:@"\n"];
 }
 
 {
-[str appendString:@"这是一个view\t"];
+ [str appendString:@"这是一个view\t"];
 
-UIView *view = [UIView new];
-view.backgroundColor = [UIColor orangeColor];
-JKTextAttachment *attachment = [JKTextAttachment attachmentWithContent:view contentSize:size alignToFont:nil];
-[str appendAttachment:attachment];
+ UIView *view = [UIView new];
+ view.backgroundColor = [UIColor orangeColor];
+ JKTextAttachment *attachment = [JKTextAttachment attachmentWithContent:view contentSize:size alignToFont:nil];
+ [str appendAttachment:attachment];
 }
 
 label.attributedText = str;
@@ -327,48 +327,48 @@ label.lineSpacing = 10;
 
 //    introduction
 {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-one.frame = CGRectMake(0, 80, width, 130);
-one.backgroundColor = [UIColor grayColor];
-one.textVerticalAlignment = JKTextVerticalAlignmentTop;
-one.numberOfLines = 0;
-one.text = @"default attributes introduction\n\ncharacterSpacing : 0.5f\nlineSpacing : 1.5f\nnumberOfLines : 1\ntextAlignment : NSTextAlignmentNatural\ntextVerticalAlignment : JKTextVerticalAlignmentCenter";
-[self.view addSubview:one];
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ one.frame = CGRectMake(0, 80, width, 130);
+ one.backgroundColor = [UIColor grayColor];
+ one.textVerticalAlignment = JKTextVerticalAlignmentTop;
+ one.numberOfLines = 0;
+ one.text = @"default attributes introduction\n\ncharacterSpacing : 0.5f\nlineSpacing : 1.5f\nnumberOfLines : 1\ntextAlignment : NSTextAlignmentNatural\ntextVerticalAlignment : JKTextVerticalAlignmentCenter";
+ [self.view addSubview:one];
 }
 
 //    insets
 {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-CGFloat maxY = CGRectGetMaxY(self.view.subviews.lastObject.frame);
-one.frame = CGRectMake(0, maxY + 10, width, 50);
-one.backgroundColor = [UIColor grayColor];
-one.textVerticalAlignment = JKTextVerticalAlignmentTop;
-one.numberOfLines = 0;
-one.textInsets = UIEdgeInsetsMake(8, 10, 0, 10);
-one.text = @"one.textInsets = UIEdgeInsetsMake(8, 10, 0, 10);";
-[self.view addSubview:one];
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ CGFloat maxY = CGRectGetMaxY(self.view.subviews.lastObject.frame);
+ one.frame = CGRectMake(0, maxY + 10, width, 50);
+ one.backgroundColor = [UIColor grayColor];
+ one.textVerticalAlignment = JKTextVerticalAlignmentTop;
+ one.numberOfLines = 0;
+ one.textInsets = UIEdgeInsetsMake(8, 10, 0, 10);
+ one.text = @"one.textInsets = UIEdgeInsetsMake(8, 10, 0, 10);";
+ [self.view addSubview:one];
 }
 //    characterSpacing
 {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-CGFloat maxY = CGRectGetMaxY(self.view.subviews.lastObject.frame);
-one.frame = CGRectMake(0, maxY + 10, width, 20);
-one.backgroundColor = [UIColor grayColor];
-one.numberOfLines = 0;
-one.characterSpacing = 5;
-one.text = @"one.characterSpacing = 5;";
-[self.view addSubview:one];
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ CGFloat maxY = CGRectGetMaxY(self.view.subviews.lastObject.frame);
+ one.frame = CGRectMake(0, maxY + 10, width, 20);
+ one.backgroundColor = [UIColor grayColor];
+ one.numberOfLines = 0;
+ one.characterSpacing = 5;
+ one.text = @"one.characterSpacing = 5;";
+ [self.view addSubview:one];
 }
 //    lineSpacing
 {
-JKRichLabel *one = [[JKRichLabel alloc] init];
-CGFloat maxY = CGRectGetMaxY(self.view.subviews.lastObject.frame);
-one.frame = CGRectMake(0, maxY + 10, width, 40);
-one.backgroundColor = [UIColor grayColor];
-one.numberOfLines = 0;
-one.lineSpacing = 5;
-one.text = @"one.lineSpacing = 5;\none.lineSpacing = 5;";
-[self.view addSubview:one];
+ JKRichLabel *one = [[JKRichLabel alloc] init];
+ CGFloat maxY = CGRectGetMaxY(self.view.subviews.lastObject.frame);
+ one.frame = CGRectMake(0, maxY + 10, width, 40);
+ one.backgroundColor = [UIColor grayColor];
+ one.numberOfLines = 0;
+ one.lineSpacing = 5;
+ one.text = @"one.lineSpacing = 5;\none.lineSpacing = 5;";
+ [self.view addSubview:one];
 }
 ```
 
