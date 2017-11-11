@@ -7,6 +7,7 @@
 
 ## Example
 
+![](http://upload-images.jianshu.io/upload_images/329694-ad60df888e372a77.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
